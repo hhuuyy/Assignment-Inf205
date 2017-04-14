@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 20, 2016 9:55:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Products" table="Products" schema="dbo" catalog="ASM_JAVA4" optimistic-lock="version">
+        <id name="code" type="serializable">
+            <column name="Code" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="serializable">
+            <column name="Name" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="Price" precision="53" scale="0" />
+        </property>
+        <property name="images" type="string">
+            <column name="Images" length="200" />
+        </property>
+        <property name="detail" type="serializable">
+            <column name="Detail" />
+        </property>
+    </class>
+</hibernate-mapping>
