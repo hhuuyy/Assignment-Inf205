@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 20, 2016 9:55:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Category" table="Category" schema="dbo" catalog="ASM_JAVA4" optimistic-lock="version">
+        <id name="code" type="serializable">
+            <column name="Code" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="serializable">
+            <column name="Name" />
+        </property>
+    </class>
+</hibernate-mapping>
